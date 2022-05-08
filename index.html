@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portafolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/0db0d871d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="grid-cont">
+      <div class="grid-side grid-I">
+        <nav class="nav">
+          <h2 id="pestaña1" onclick="menu()">Inicio</h2>
+          <!-- <h2 id="pestaña2" onclick="inicio()">Sobre mí</h2> -->
+          <h2 id="pestaña3" onclick="conocimiento()">Software</h2>
+          <h2 id="pestaña4" onclick="projects()">Proyectos</h2>
+          <h2 id="pestaña5" onclick="info()">Contáctame</h2>
+        </nav>
+      </div>
+      <header class="header">
+        <div class="logo"><h1>Portafolio</h1></div>
+        <div class="menuImg">
+          <img class="btnDown" src="imagenes/menu.svg" alt="menu" />
+        </div>
+      </header>
+      <nav class="nav-res">
+        <h2><a class="n1" href="#i">Inicio</a></h2>
+        <h2><a class="n2" href="#p">Proyectos</a></h2>
+        <h2><a class="n3" href="#c">Contáctame</a></h2>
+      </nav>
+	  <div id="i"></div>
+      <div class="grid-main grid-I">
+        <div class="cont-main" id="divMain">
+          <div class="cont_portafolio">
+            <h1>
+              Erick Daniel Lorenzo González
+              <span>&#160;</span>
+            </h1>
+            <h2>
+              Ingeniero en Computación
+              <span>&#160;</span>
+            </h2>
+            <h3>
+              Desarrollador Web
+              <span>&#160;</span>
+            </h3>
+          </div>
+          <div class="cont-img">
+            <img src="imagenes/port.svg" />
+          </div>
+        </div>
+
+        <section class="cont-con" id="divCon">
+          <div class="icons">
+            <div class="pack">
+              <img src="imagenes/icons/html.png" class="icon" />
+              <h2>HTML</h2>
+            </div>
+            <div class="pack">
+              <img src="imagenes/icons/css-3.png" class="icon" />
+              <h2>CSS</h2>
+            </div>
+            <div class="pack">
+              <img src="imagenes/icons/sass.png" class="icon" />
+              <h2>SASS</h2>
+            </div>
+            <div class="pack">
+              <img src="imagenes/icons/js.png" class="icon" />
+              <h2>JAVASCRIPT</h2>
+            </div>
+            <div class="pack">
+              <img src="imagenes/icons/physics.png" class="icon" />
+              <h2>REACT</h2>
+            </div> 
+          </div>
+        </section>
+        <div class="cont-habilidades" id="divHab">
+			<div id="p"></div>
+          <div class="project p1">
+            <a href="https://daniellorenzos.github.io/StarWars/" target="_blank">
+              <img src="imagenes/server.svg" class="image" />
+            <h2 class="text-u">Star Wars - Cards</h2>
+          </div>
+          <div class="project p2">
+            <a href="https://daniellorenzos.github.io/Veterinaria/" target="_blank">
+              <img src="imagenes/server.svg" class="image" />
+            </a>
+            <h2 class="text-u">Veterinaria</h2>
+          </div>
+          <div class="project p3">
+            <a href="https://github.com/DanielLorenzoS/Proyectos" target="_blank">
+              <img src="imagenes/server.svg" class="image" />
+            </a>
+            <h2 class="text-u">Proyecto PHP - Repositorio</h2>
+          </div>
+          <div class="project p4">
+            <a href="https://rpokemon.netlify.app/favorites" target="_blank">
+              <img src="imagenes/server.svg" class="image" />
+            </a>
+            <h2 class="text-u">Proyecto Pokemon - React</h2>
+          </div>
+        </div>
+		<div id="c"></div>
+        <div class="contenedor_contacto" id="divForm">
+          <div class="dataF">
+            <div class="form_section">
+              <div class="inf">
+                <output class="out-info"
+                  ><a href="mailto: lorenzccaz@gmail.com"
+                    >Contáctame por Correo</a
+                  ></output
+                ><br />
+                <a href="mailto: lorenzccaz@gmail.com"
+                  ><img
+                    src="imagenes/mail.svg"
+                    class="img-form"
+                    id="image" /></a
+                ><br />
+              </div>
+              <div class="inf">
+                <output class="out-info"
+                  ><a href="whatsapp: 5586804039"
+                    >Contáctame por Whatsapp</a
+                  ></output
+                ><br />
+                <a href="whatsapp: 5586804039"
+                  ><img
+                    src="imagenes/whatsapp.svg"
+                    class="img-form"
+                    id="image" /></a
+                ><br />
+              </div>
+              <div class="inf">
+                <output class="out-info"
+                  ><a
+                    href="https://www.linkedin.com/in/daniellorenzos/"
+                    target="_blank"
+                    >Visita mi perfil en Linkedin</a
+                  ></output
+                ><br />
+                <a
+                  href="https://www.linkedin.com/in/daniellorenzos/"
+                  target="_blank"
+                  ><img
+                    src="imagenes/linkedin.svg"
+                    class="img-form"
+                    id="image" /></a
+                ><br />
+              </div>
+              <div class="inf">
+                <output class="out-info"
+                  ><a href="https://github.com/DanielLorenzoS" target="_blank"
+                    >Conoce mis repositorios en GitHub</a
+                  ></output
+                ><br />
+                <a href="https://github.com/DanielLorenzoS" target="_blank"
+                  ><img
+                    src="imagenes/github.svg"
+                    class="img-form"
+                    id="image" /></a
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="codex.js"></script>
+  </body>
+</html>

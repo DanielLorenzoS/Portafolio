@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+  color: #ddd;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#i, #p, #c {
+  display: none;
+}
+.grid-cont {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: 100vh;
+}
+.grid-side {
+  background-color: #000;
+}
+.grid-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #002973;
+}
+.header {
+  display: none;
+}
+.cont {
+  display: none;
+}
+
+.fas {
+  font-size: 30px;
+  margin: 10px;
+}
+.nav-res {
+  display: none;
+}
+.nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  margin-left: 30px;
+}
+.nav h2 {
+  font-size: 28px;
+  font-family: serif;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.nav h2:hover {
+  border-bottom: 2px solid #002973;
+}
+
+h2 span {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #002973;
+  animation: write 1.2s steps(40);
+}
+h3 span {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #002973;
+  animation: write 1.2s steps(40);
+}
+h4 span {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #002973;
+  animation: write 1.2s steps(40);
+}
+
+@keyframes write {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 10%;
+  }
+}
+.cont-img {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.cont-img img {
+  max-height: 450px;
+  max-width: 450px;
+  animation-name: intro;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 6%;
+  }
+}
+
+.cont_portafolio {
+  text-align: center;
+  overflow: hidden;
+  margin: 5% 110px;
+  padding: 10px;
+  border-bottom: 3px solid #ddd;
+  opacity: 90%;
+}
+.cont_estudios {
+  letter-spacing: 3px;
+  margin: 80px 80px;
+  padding: 10px;
+  border-bottom: 5px double #ddd;
+}
+.cont_direccion {
+  letter-spacing: 3px;
+  margin: 80px 80px;
+  padding: 10px;
+  border-bottom: 5px double #ddd;
+}
+
+.img-text {
+  display: flex;
+  justify-content: center;
+}
+.img-text img {
+  max-width: 600px;
+  max-height: 600px;
+  animation: shadow 2.3s;
+}
+@keyframes shadow {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.cont-habilidades {
+  display: none;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  flex-direction: column;
+  justify-content: center;
+}
+.project {
+  text-align: center;
+  padding: 5px;
+  height: 32vh;
+  width: 65%;
+  justify-content: center;
+  border: 6px double #fff;
+  border-radius: 6px;
+  margin: 20px;
+  cursor: pointer;
+}
+.project h2 {
+  margin: 1px 20px;
+  padding: 5px;
+  border-radius: 7px;
+  opacity: 0.95;
+}
+.image {
+  max-width: 180px;
+  max-height: 180px;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  padding: 20px 20px;
+  border-radius: 8px;
+}
+.text-u {
+  text-align: center;
+  text-decoration: none;
+}
+.cont_conoci {
+  justify-content: center;
+  margin: 80px 80px;
+  border-bottom: 5px double #ddd;
+}
+.list {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.title {
+  text-align: justify;
+  line-height: 40px;
+}
+h2 {
+  margin: 15px auto;
+}
+.cont-con {
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+.icon {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-left: -300px;
+  animation: turn 2s forwards;
+}
+@keyframes turn {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin: 15px;
+    transform: rotate(360deg);
+  }
+}
+.pack {
+  overflow: hidden;
+  text-align: center;
+}
+.pack h2 {
+  margin: 70px;
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: 2s up forwards;
+}
+@keyframes up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.inputD {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+  border-style: none;
+  border-bottom: 3px solid #144fff;
+  border-right: none;
+}
+.btn {
+  font-size: 25px;
+  margin: 10px;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #2040ff;
+  border: none;
+}
+.btn:active {
+  background: #222;
+}
+.contenedor_contacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+  display: none;
+}
+.dataF {
+  text-align: center;
+  border: 8px double #fff;
+  padding: 20px;
+  margin: 0 100px;
+
+  font-size: 25px;
+  letter-spacing: 2px;
+  user-select: none;
+  background: transparent;
+}
+.form_section {
+  margin-bottom: 20px;
+}
+.out-info {
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.img-form {
+  position: static;
+  margin: 10px;
+  max-width: 50px;
+  max-height: 50px;
+  animation-name: mail;
+  animation-duration: 1.3s;
+}
+
+@keyframes mail {
+  from {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  to {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
